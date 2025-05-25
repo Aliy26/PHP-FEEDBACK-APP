@@ -1,5 +1,9 @@
+      <?php include "inc/header.php"; ?>
 
-        <?php include "inc/header.php"; ?>
+      <?php
+        $name = $email = $feedback = "";
+      ?>
+
         <img src="/php-start/feedback/img/logo.png" class="w-25 mb-3" alt="" />
         <h2>Feedback</h2>
         <p class="lead text-center">Leave feedback for Aliy</p>
