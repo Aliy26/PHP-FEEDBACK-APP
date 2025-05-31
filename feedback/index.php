@@ -20,6 +20,7 @@
             $emailErr = "Email is required";
           } else {
             $email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
+            echo $email;
           }
 
           // Validate feedback
