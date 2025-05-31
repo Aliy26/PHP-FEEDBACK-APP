@@ -27,6 +27,7 @@
             $feedbackErr = "Feedback is required to complete the process";
           } else {
             $feedback = filter_input(INPUT_POST, "feedback", FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+            echo $feedback;
           }
 
       ?>
