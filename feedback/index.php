@@ -20,7 +20,7 @@
             $emailErr = "Email is required";
           } else {
             $email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
-            echo $email;
+        
           }
 
           // Validate feedback
@@ -28,7 +28,7 @@
             $feedbackErr = "Feedback is required to complete the process";
           } else {
             $feedback = filter_input(INPUT_POST, "feedback", FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-            echo $feedback;
+           
           }
 
       ?>
