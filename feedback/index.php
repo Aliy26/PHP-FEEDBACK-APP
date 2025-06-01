@@ -31,6 +31,21 @@
            
           }
 
+          if(empty($nameErr) && empty($emailErr) && empty($bodyErr)) {
+
+            // Add to database
+            
+            $sql = "INSERT INTO feedback (name, email, feedback) VALUES ('$name', '$email', '$body')";
+
+            if(mysqli_query($conn, $sql)) {
+                // Success
+                header("Location: feedback.php");
+            } else {
+              // Error
+              echo "Error: mysqli_error($conn)";
+            }
+          }
+
       ?>
 
         <img src="/php-start/feedback/img/logo.png" class="w-25 mb-3" alt="" />
