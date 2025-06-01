@@ -35,7 +35,9 @@
 
             // Add to database
             
-            $sql = "INSERT INTO feedback (name, email, feedback) VALUES ('$name', '$email', '$body')";
+            $sql = "INSERT INTO feedback (name, email, feedback) VALUES ('$name', '$email', '$feedback')";
+
+
 
             if(mysqli_query($conn, $sql)) {
                 // Success
